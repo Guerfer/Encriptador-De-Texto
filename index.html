@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Encriptador De Texto</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        
+    <body>
+        <header>
+            <div class="logos">
+                <h1>Encriptador De Texto</h1>
+                <h2><img src="Imagenes/Logo.png" class="alura"></h2>
+            </div>
+        </header>
+        
+        <main">
+            <section>
+                <textarea id="caja-mensaje" autofocus class="campo-texto" placeholder="Escribe el texto a encriptar..."></textarea>
+
+                <textarea id="caja-mensaje" readonly class="campo-respuesta"></textarea>
+            </section>
+
+            <div id="botones">
+                
+                <button id="efecto" class="boton-encriptar" onclick="textoParaEncriptar()">ENCRIPTAR TEXTO</button>
+                <button id="efecto" class="boton-desencriptar" onclick="textoParaDesencriptar()">DESENCRIPTAR</button>
+                <button id="efecto" class="boton-copiar" onclick="copiarBorrarPegar()">COPIAR Y PEGAR TEXTO</button>
+                <button id="efecto" class="boton-limpiar" onclick="limpiar()">LIMPIAR</button>
+            </div>
+            <div>
+                <img src="Imagenes/Candado 2.png" class="candado-pass">
+                <img src="Imagenes/Oracle.png" class="oracle">
+            </div>
+            
+                
+            <footer>
+                <p>&copy Jeissson fernando landinez guerra - Grupo 6</p>
+            </footer>
+        </main>
+        
+        <script src="script.js"></script>
+    </body>
+</html>
